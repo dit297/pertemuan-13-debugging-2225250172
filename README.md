@@ -55,6 +55,28 @@ python praktik/praktik_4_debugging.py
 python latihan/03_test_case.py
 ```
 
+## Hasil Retest
+
+Setelah ketiga perbaikan diterapkan, seluruh test case dijalankan ulang dan semua PASS. Tidak ditemukan
+regresi pada test yang sebelumnya sudah PASS.
+
+| ID | Target | Expected | Actual | Status |
+|---|---|---|---|---|
+| T1 | rata-rata `[80, 60, 90, 70]` | 75.0 | 75.0 | PASS |
+| T2 | rata-rata `[100, 80]` | 90.0 | 90.0 | PASS |
+| T3 | status 60 | Lulus | Lulus | PASS |
+| T4 | status 59 | Tidak lulus | Tidak lulus | PASS |
+| T5 | tertinggi `[80, 60, 90, 70]` | 90 | 90 | PASS |
+| T6 | rata-rata kosong | 0 | 0 | PASS |
+| T7 | tertinggi kosong | None | None | PASS |
+
+## Penggunaan Debugger
+
+Pada `latihan/04_debug_breakpoint.py`, breakpoint ditempatkan pada pemanggilan atau baris di dalam
+`jumlahkan()`. **Step Into** digunakan untuk masuk ke fungsi, panel **Variables** memeriksa nilai
+parameter, dan **Step Over** digunakan untuk menjalankan baris berikutnya. **Step Out** mengembalikan
+eksekusi ke pemanggil setelah fungsi selesai.
+
 ## Refleksi
 
 Teknik paling membantu adalah tracing dan breakpoint karena keduanya membuat perubahan nilai variabel serta alur keputusan dapat diamati secara konkret. Test case batas diperlukan untuk membuktikan bug tanpa bergantung pada perkiraan.
