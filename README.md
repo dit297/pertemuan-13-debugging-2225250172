@@ -2,7 +2,7 @@
 
 Nama: Aditya Setianugroho
 NIM: 2225250172
-Kelas: (dapat dilengkapi sesuai kelas mahasiswa)
+Kelas: 3F
 
 ## Kasus
 
