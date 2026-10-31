@@ -42,6 +42,12 @@ Program menghitung faktorial 4.
 | B02 | Nilai 60 dinyatakan tidak lulus pada T3 | `praktik_4_debugging.py`, `status` | Pembanding `> 60` tidak memasukkan nilai batas | Gunakan `>= 60` |
 | B03 | Nilai tertinggi 0 pada T5 | `praktik_4_debugging.py`, `nilai_tertinggi` | Inisialisasi 0 dan pembanding terbalik (`x < tertinggi`) | Mulai dari `nilai[0]`, bandingkan `x > tertinggi`, tangani list kosong |
 
+## Hasil Reproduksi Awal
+
+Pengujian awal menghasilkan T1, T2, T3, T5, dan T7 gagal. Bukti ini membuktikan adanya tiga bug
+logika pada rata-rata, batas kelulusan, dan nilai tertinggi. T4 tetap PASS karena nilai 59 memang berada
+di bawah batas kelulusan.
+
 ## Cara Menjalankan
 
 ```bash
